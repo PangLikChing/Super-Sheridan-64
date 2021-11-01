@@ -58,7 +58,6 @@ public class GameManager : MonoBehaviour
                 gameOverUI.SetActive(true);
                 gameoverText.text = "You Win";
                 // Disable player control
-                Debug.Log("i am here");
                 playerCamera.GetComponent<MouseLook>().enabled = false;
                 player.GetComponent<PlayerMovement>().enabled = false;
                 player.GetComponent<Rigidbody>().isKinematic = true;
